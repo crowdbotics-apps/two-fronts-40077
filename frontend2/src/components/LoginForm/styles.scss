@@ -1,0 +1,45 @@
+.registration-form{
+  .tabs{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    .nav-item{
+      button{
+        border-radius: 0;
+        background-color: #BDC3D2; 
+        color: #FFFFFF;
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+      button.active {background-color: #1B1B1C;}
+    }
+  }
+  #register-by-tab-email{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  #register-by-tab-phone{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .register-btn{
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    &:hover{opacity: 0.9;}
+  }
+  .btn-primary{
+    background-color: #1380FF;
+  }
+  
+}
+
+@media only screen and (max-width: 450px) {
+  .on-mobile-w-100{
+    width: 100% !important;
+  }
+}

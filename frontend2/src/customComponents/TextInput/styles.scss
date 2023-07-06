@@ -1,0 +1,51 @@
+.textInput{
+
+  .input-container{
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-container input{
+    border: 1px solid #d5d8de;
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 25px !important;
+    width: 100%;
+
+    &:focus-visible{
+      border: 1px #393CDC;
+    }
+  }
+  
+  .input-container .input-label{
+    /* background: #fff; */
+    padding: 0 8px;
+    position: absolute;
+    bottom: 17px;
+    box-sizing: border-box;
+    color: #8a8a8a;
+    left: 8px;
+    transition: transform 200ms;
+    width: 100%;
+    z-index: 1;
+    text-align: left;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }        
+  
+  .input-container .input-label span{
+    background: #ffffff;
+    padding: 0px 8px;
+  }
+  
+  
+  .input-container input:focus~.input-label,
+  .input-container.hasValue input~.input-label
+  {
+    color: #000;
+    transform: scale(.75) translateY(-35px) translateX(-80px);
+  }	
+}

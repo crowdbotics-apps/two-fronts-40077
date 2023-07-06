@@ -1,0 +1,29 @@
+@import "../../assets/styles/mixins.scss";
+
+.application-add-button {
+  display: flex;
+  justify-content: center;
+}
+
+.application-questions-heading {
+  @include fs-20;
+}
+
+.application-question-item {
+  & + & {
+    @include app-width("margin-top", 15);
+  }
+
+  .btn-delete {
+    position: absolute;
+    @include app-width("right", 10);
+    @include app-width("top", 10);
+    @include app-width("height", 20);
+    @include app-width("width", 20);
+
+    svg {
+      @include app-width("height", 20);
+      @include app-width("width", 20);
+    }
+  }
+}

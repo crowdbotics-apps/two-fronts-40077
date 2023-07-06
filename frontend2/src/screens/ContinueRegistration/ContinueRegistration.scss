@@ -1,0 +1,12 @@
+.mb-180{
+  margin-bottom: 180px;
+}
+
+@media only screen and (max-width: 575px) {
+  .mb-180{
+    margin-bottom: 10px !important;
+  }
+  .font-sm-small{
+    h3{font-size: 15px;}
+  }
+}

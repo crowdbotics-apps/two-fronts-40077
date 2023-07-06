@@ -1,0 +1,155 @@
+@import "./mixins.scss";
+
+html,
+body {
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  @include font-400;
+  @include fs-body;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-black);
+  @include font-700;
+  line-height: 1em;
+}
+
+.fs-20 {
+  @include fs-20;
+}
+
+.w-14 {
+  @include app-width("width", 14);
+}
+
+body > #root,
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.icon-wrap {
+  display: flex;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.form-group {
+  .form-label {
+    @include app-width("margin-bottom", 20);
+    margin-left: 0;
+    margin-right: 0;
+    @include app-width("margin-top", 20);
+  }
+}
+
+.form-control {
+  @include app-width("height", 50);
+}
+.form-control:focus,
+.form-select:focus,
+.accordion-button:focus {
+  border-color: var(--color-grey);
+  box-shadow: 0 0 0 0.25rem rgba(var(--color-grey-rgb), 0.25);
+}
+
+.form-select {
+  background-size: calc(100vw * 16 / 1920) calc(100vw * 12 / 1920);
+}
+
+.react-datepicker-wrapper {
+  .form-control {
+    background-image: url(../graphics/icon-calendar.svg);
+    background-position: calc(100% - (100vw * 16 / 1920)) 50%;
+    background-size: calc(100vw * 22 / 1920) calc(100vw * 22 / 1920);
+    background-repeat: no-repeat;
+  }
+}
+
+.form-check-input {
+  @include app-width("border-radius", 1);
+  @include app-width("height", 18);
+  @include app-width("width", 18);
+
+  &:focus {
+    border-color: var(--color-grey);
+    box-shadow: 0 0 0 0.25rem rgba(var(--color-grey-rgb), 0.25);
+  }
+  &:checked {
+    background-color: var(--color-grey-dark);
+    border-color: var(--color-grey-darker);
+  }
+}
+
+.form-control--search {
+  background-image: url(../graphics/icon-form-control-search.svg);
+  background-position: calc(100% - (100vw * 16 / 1920)) 50%;
+  background-size: calc(100vw * 22 / 1920) calc(100vw * 22 / 1920);
+  background-repeat: no-repeat;
+}
+
+button.btn {
+  border: 0;
+  @include app-width("border-radius", 4);
+  @include font-600;
+  @include fs-14;
+  @include app-width("height", 50);
+  @include app-width("padding-left", 25);
+  @include app-width("padding-right", 25);
+
+  &.sq {
+    @include app-width("width", 50);
+  }
+
+  + .btn {
+    @include app-width("margin-left", 10);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.btn-primary {
+    background-color: var(--color-maroon-dark);
+  }
+  &.btn-secondary {
+    background-color: var(--color-grey);
+  }
+  &.btn-light {
+    background-color: var(--color-grey-light);
+
+    &:hover {
+      background-color: rgba(var(--color-grey-rgb), 0.4);
+    }
+  }
+}
+
+.modal {
+  .modal-title {
+    @include font-600;
+  }
+
+  .modal-footer {
+    .btn {
+      @include app-width("height", 37);
+    }
+  }
+
+  & + .modal-backdrop,
+  & + .modal-backdrop + .modal {
+    z-index: 1050 + 5; /* for second active modal */
+  }
+}
