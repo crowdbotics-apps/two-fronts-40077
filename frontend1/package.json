@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rimraf ../backend/web_build && mv build ../backend/web_build || move build ../backend/web_build",
+    "build": "react-scripts build && rimraf ../backend/web_build && mkdir ../backend/web_build/frontend1 && mv build ../backend/web_build/frontend1 || move build ../backend/web_build/frontend1",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

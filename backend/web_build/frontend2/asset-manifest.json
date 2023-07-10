@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/frontend2/static/css/main.144cf1df.css",
+    "main.js": "/frontend2/static/js/main.1a3e8866.js",
+    "static/js/787.cda612ba.chunk.js": "/frontend2/static/js/787.cda612ba.chunk.js",
+    "static/media/AddImage.svg": "/frontend2/static/media/AddImage.6e4df09c9b87deb0a4770d0515e4022b.svg",
+    "static/media/WelcomeBack.svg": "/frontend2/static/media/WelcomeBack.a6db43f0278464445ae82c5299ff0b20.svg",
+    "static/media/AppToBank.svg": "/frontend2/static/media/AppToBank.fd5b6fcea58d597aae745264f1a65fd7.svg",
+    "static/media/SliderFillerForMobile.svg": "/frontend2/static/media/SliderFillerForMobile.9a9e27880a53b16d3671bb3eec4d158d.svg",
+    "static/media/Logo.svg": "/frontend2/static/media/Logo.1bcfbe5cd69f6de40c42d9fc3fce7875.svg",
+    "static/media/Article.svg": "/frontend2/static/media/Article.2b513f33ab966374d096690b695b6886.svg",
+    "service-worker.js": "/frontend2/service-worker.js",
+    "static/media/LoginWith.svg": "/frontend2/static/media/LoginWith.357e0ad2cae966f7b140b16cf939dfe9.svg",
+    "static/media/NbblLogoBlack.svg": "/frontend2/static/media/NbblLogoBlack.7a73e435a079950df530a33843eb6421.svg",
+    "index.html": "/frontend2/index.html",
+    "static/media/Checkmark.svg": "/frontend2/static/media/Checkmark.a4e6f93bdd9738008646c8fdc1d80fe2.svg",
+    "static/media/Slide2.svg": "/frontend2/static/media/Slide2.6cde8c572f9143cec37459b59c0e649c.svg",
+    "static/media/Slide1.svg": "/frontend2/static/media/Slide1.a4b5d0118cb73a819f4d50f3d901b852.svg",
+    "main.144cf1df.css.map": "/frontend2/static/css/main.144cf1df.css.map",
+    "main.1a3e8866.js.map": "/frontend2/static/js/main.1a3e8866.js.map",
+    "787.cda612ba.chunk.js.map": "/frontend2/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.144cf1df.css",
+    "static/js/main.1a3e8866.js"
+  ]
+}
