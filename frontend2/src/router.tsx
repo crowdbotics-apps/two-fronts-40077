@@ -15,48 +15,84 @@ import PrivacyPolicies from "./screens/PrivacyPolicies/PrivacyPolicies"
 
 const AppRoutes = () => {
   const element = useRoutes([
-    { path: APPCONFIG.routes.home, element: <Registration />, index: true },
-    { path: APPCONFIG.routes.login, element: <Login /> },
-    { path: APPCONFIG.routes.verifyOtp, element: <VerifyOtp /> },
     {
-      // SCREEN PRIOR TO CREATE PASSWORD SCREEN
-      path: APPCONFIG.routes.continueRegistration,
-      element: <ContinueRegistration />
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.home,
+      element: <Registration />,
+      index: true
     },
     {
-      path: `${APPCONFIG.routes.continueRegistration}/:publisherData`,
-      element: <ContinueRegistration />
-    },
-    { path: APPCONFIG.routes.createPassword, element: <CreatePassword /> },
-    {
-      path: `${APPCONFIG.routes.createPassword}/:publisherData`,
-      element: <CreatePassword />
-    },
-    { path: APPCONFIG.routes.logout, element: <Logout /> },
-
-    {
-      path: `${APPCONFIG.routes.registerWithPublisher}/:publisherData`,
-      element: <Registration />
-    },
-    {
-      path: `${APPCONFIG.routes.loginWithPublisher}/:publisherData`,
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.login,
       element: <Login />
     },
     {
-      path: APPCONFIG.routes.connectYourBank,
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.verifyOtp,
+      element: <VerifyOtp />
+    },
+    {
+      // SCREEN PRIOR TO CREATE PASSWORD SCREEN
+      path:
+        `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.continueRegistration,
+      element: <ContinueRegistration />
+    },
+    {
+      path:
+        `${process.env.PUBLIC_URL}/` +
+        `${APPCONFIG.routes.continueRegistration}/:publisherData`,
+      element: <ContinueRegistration />
+    },
+    {
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.createPassword,
+      element: <CreatePassword />
+    },
+    {
+      path:
+        `${process.env.PUBLIC_URL}/` +
+        `${APPCONFIG.routes.createPassword}/:publisherData`,
+      element: <CreatePassword />
+    },
+    {
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.logout,
+      element: <Logout />
+    },
+
+    {
+      path:
+        `${process.env.PUBLIC_URL}/` +
+        `${APPCONFIG.routes.registerWithPublisher}/:publisherData`,
+      element: <Registration />
+    },
+    {
+      path:
+        `${process.env.PUBLIC_URL}/` +
+        `${APPCONFIG.routes.loginWithPublisher}/:publisherData`,
+      element: <Login />
+    },
+    {
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.connectYourBank,
       element: <PlaidLink />
     },
     {
-      path: `${APPCONFIG.routes.connectYourBank}/:publisherData`,
+      path:
+        `${process.env.PUBLIC_URL}/` +
+        `${APPCONFIG.routes.connectYourBank}/:publisherData`,
       element: <PlaidLink />
     },
-    { path: APPCONFIG.routes.backToPublisher, element: <BackToPublisher /> },
-    { path: APPCONFIG.routes.addFunds, element: <AddFunds /> },
     {
-      path: APPCONFIG.routes.termsAndConditions,
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.backToPublisher,
+      element: <BackToPublisher />
+    },
+    {
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.addFunds,
+      element: <AddFunds />
+    },
+    {
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.termsAndConditions,
       element: <TermsAndConditions />
     },
-    { path: APPCONFIG.routes.privacyPolicies, element: <PrivacyPolicies /> }
+    {
+      path: `${process.env.PUBLIC_URL}/` + APPCONFIG.routes.privacyPolicies,
+      element: <PrivacyPolicies />
+    }
   ])
 
   return element

@@ -125,21 +125,21 @@ export const RouteElements = () => {
     <Routes>
       {routeConfig?.map((rcItem, i) => (
         <Route
-          path={rcItem?.path}
+          path={`${process.env.PUBLIC_URL}` + rcItem?.path}
           element={rcItem?.element}
           index={rcItem?.index}
           key={i}
         >
           {rcItem?.children?.map((rcItemChild, j) => (
             <Route
-              path={rcItemChild?.path}
+              path={`${process.env.PUBLIC_URL}` + rcItemChild?.path}
               element={rcItemChild?.element}
               index={rcItemChild?.index}
               key={j}
             >
               {rcItemChild?.children?.map((rcItemSubChild, k) => (
                 <Route
-                  path={rcItemSubChild?.path}
+                  path={`${process.env.PUBLIC_URL}` + rcItemSubChild?.path}
                   element={rcItemSubChild?.element}
                   index={rcItemSubChild?.index}
                   key={k}

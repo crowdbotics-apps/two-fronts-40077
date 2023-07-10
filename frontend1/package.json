@@ -2,6 +2,7 @@
   "name": "teachers-web-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://two-fronts-40077.botics.co/frontend1/",
   "dependencies": {
     "@tanstack/react-query": "^4.29.7",
     "@testing-library/jest-dom": "^5.16.5",

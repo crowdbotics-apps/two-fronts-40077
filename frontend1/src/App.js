@@ -30,7 +30,7 @@ function App() {
             pauseOnFocusLoss
             theme="light"
           ></ToastContainer>
-          <BrowserRouter>
+          <BrowserRouter basename={"/frontend1"}>
             <RouteElements />
           </BrowserRouter>
         </AppContextProvider>

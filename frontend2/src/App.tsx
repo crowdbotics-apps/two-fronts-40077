@@ -16,7 +16,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <AlertDismissible />
       <React.StrictMode>
-        <Router>
+        <Router basename={"/frontend2"}>
           <AppRoutes />
         </Router>
       </React.StrictMode>

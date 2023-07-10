@@ -172,15 +172,19 @@ const ScreenLogin = () => {
                   <Row className="mb-3 align-items-start">
                     <Col xs={6} className="ps-1">
                       <Form.Check>
-                          <Form.Check.Label className="remember-me-label" >
+                        <Form.Check.Label className="remember-me-label">
                           Remember me
                         </Form.Check.Label>
-                        <Form.Check.Input type="checkbox" checked={rememberMe} onChange={handleRememberMeChange} />
+                        <Form.Check.Input
+                          type="checkbox"
+                          checked={rememberMe}
+                          onChange={handleRememberMeChange}
+                        />
                       </Form.Check>
                     </Col>
                     <Col xs={6} className="text-end">
                       <Link
-                        to={ALLROUTES.verifyEmail}
+                        to={`${process.env.PUBLIC_URL}` + ALLROUTES.verifyEmail}
                         className="text-decoration-none fw-semibold"
                         style={{ color: "#400201" }}
                       >

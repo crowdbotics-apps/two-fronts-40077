@@ -261,7 +261,7 @@ const ScreenSignUp = () => {
                   <p className="mt-3 mb-0">
                     Already have an account?{" "}
                     <Link
-                      to="/login"
+                      to={`${process.env.PUBLIC_URL}/login`}
                       style={{ color: "#400201", fontWeight: 500 }}
                       className="text-decoration-none"
                     >
