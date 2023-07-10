@@ -1,0 +1,6 @@
+{
+  "semi": false,
+  "trailingComma": "none",
+  "parser": "babel",
+  "arrowParens": "avoid"
+}

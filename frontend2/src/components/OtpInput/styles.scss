@@ -1,0 +1,22 @@
+.otp-input{
+  .otp-input-box{
+    margin: 10px;
+    width: 50px;
+    height: 45px;
+    padding: 5px 18px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  .otp-btn{
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    &:hover{opacity: 0.9;}
+  }
+}

@@ -1,0 +1,18 @@
+.alreadyHaveAccount{
+  margin-top: 6%;
+  .have-account{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #1380FF;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover{
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import "../../../assets/styles/mixins.scss";
+
+.main-content {
+  &-area {
+    @include app-width("padding", 30);
+  }
+}

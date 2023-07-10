@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+@mixin font-400 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+@mixin font-500 {
+  @include font-400();
+  font-weight: 500;
+}
+@mixin font-500i {
+  @include font-400();
+  font-style: italic;
+  font-weight: 500;
+}
+@mixin font-600 {
+  @include font-400();
+  font-weight: 600;
+}
+@mixin font-700 {
+  @include font-400();
+  font-weight: 700;
+}
+
+@mixin fs-12 {
+  @include app-width("font-size", 12);
+  line-height: 14.5px;
+}
+@mixin fs-13 {
+  @include app-width("font-size", 13);
+  line-height: 15.5px;
+}
+@mixin fs-14 {
+  @include app-width("font-size", 14);
+  @include app-width("line-height", 16);
+}
+@mixin fs-15 {
+  @include app-width("font-size", 15);
+  @include app-width("line-height", 18);
+}
+@mixin fs-18 {
+  @include app-width("font-size", 18);
+  @include app-width("line-height", 22);
+}
+@mixin fs-20 {
+  @include app-width("font-size", 20);
+  @include app-width("line-height", 28);
+}
+
+@mixin fs-body {
+  @include fs-14;
+}
+
+@mixin app-width($property, $value) {
+  #{$property}: calc(100vw * #{$value} / 1920);
+}

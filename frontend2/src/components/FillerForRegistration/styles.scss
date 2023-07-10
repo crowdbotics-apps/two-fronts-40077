@@ -1,0 +1,31 @@
+.registration-filler{
+  background-color: #ED1B24;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  .slider-img{
+    width: 100%;
+    justify-self: center;
+  }
+  p{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 140px;
+  }
+  .sliders{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    img{
+     width: 90px; 
+    }
+  }
+}

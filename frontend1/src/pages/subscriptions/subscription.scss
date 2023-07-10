@@ -1,0 +1,74 @@
+@import "../../assets/styles/mixins.scss";
+
+.card-content {
+    background-color: var(--color-grey-lighter);
+    @include app-width("border-radius", 10);
+    .title-content {
+        background-color: var(--color-grey-light);
+        @include app-width("font-size", 20);
+        @include app-width("border-radius", 12);
+        @include app-width("padding", 20);
+    }
+}
+
+.border-hidden {
+    border: hidden !important;
+}
+
+.radio-input {
+    font-weight: bold;
+    @include app-width("margin-bottom", 10); /* !important;*/
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    @include app-width("margin-top", 10); /* !important;*/
+
+    label {
+        a {
+            font-weight: normal;
+            @include app-width("margin-left", 6);
+        }
+        @include app-width("margin-left", 10);
+        @include app-width("margin-top", 4);
+    }
+    button {
+        @include app-width("margin-left", 10);
+    }
+    span {
+        @include app-width("margin-top", 4);
+        float: right;
+    }
+}
+
+.discount-text {
+    font-weight: bold;
+    @include app-width("margin-bottom", 10);
+    margin-left: 0;
+    margin-right: 0;
+    @include app-width("margin-top", 14);
+}
+
+.price {
+    @include app-width("margin-bottom", 16);
+    margin-left: 0;
+    margin-right: 0;
+    @include app-width("margin-top", 16);
+    .red {
+        color: #b71632;
+        @include app-width("margin-right", 6);
+    }
+    span {
+        float: right;
+    }
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.card-content-brown {
+    background-color: var(--color-gold);
+}
+
+.form-check-label {
+    font-weight: 500;
+}

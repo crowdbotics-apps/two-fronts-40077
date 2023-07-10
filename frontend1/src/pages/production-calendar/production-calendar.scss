@@ -1,0 +1,150 @@
+@import "../../assets/styles/mixins.scss";
+
+.production-calendar-main-header {
+  h4 {
+    @include font-500;
+  }
+}
+
+.conflict-list,
+.events-list {
+  .conflict-item,
+  .event-item {
+    background-color: var(--color-grey-lighter);
+    @include app-width("border-radius", 10);
+    display: flex;
+    @include app-width("margin-top", 10);
+
+    .time {
+      align-items: center;
+      background-color: var(--color-dark-blue);
+      @include app-width("border-top-left-radius", 10);
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      @include app-width("border-bottom-left-radius", 10);
+      color: var(--color-white);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      @include app-width("width", 83);
+    }
+
+    .details {
+      border-left-color: var(--color-black);
+      border-left-style: dashed;
+      @include app-width("border-left-width", 3);
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      @include app-width("padding-bottom", 17);
+      @include app-width("padding-left", 23);
+      @include app-width("padding-right", 23);
+      @include app-width("padding-top", 17);
+
+      h4 {
+        @include font-500;
+        @include fs-18;
+        margin: 0;
+      }
+
+      .tags {
+        display: flex;
+        @include app-width("margin-top", 10);
+
+        .tag {
+          background-color: var(--color-gold);
+          @include app-width("border-radius", 10);
+          color: var(--color-gold-dark);
+          @include font-500;
+          @include fs-12;
+          @include app-width("padding-bottom", 5);
+          @include app-width("padding-left", 10);
+          @include app-width("padding-right", 10);
+          @include app-width("padding-top", 5);
+        }
+      }
+    }
+  }
+}
+
+.user-filters {
+  display: flex;
+  overflow: auto;
+}
+
+.modal-production-calendar {
+  .col-right {
+    border-left-color: var(--color-border);
+    border-left-style: solid;
+    @include app-width("border-left-width", 1);
+  }
+}
+
+.calendar-month {
+  .date-conflict {
+    &s {
+      align-content: flex-start;
+      @include app-width("bottom", 10);
+      display: flex;
+      flex-wrap: wrap;
+      @include app-width("left", 5);
+      overflow: hidden;
+      position: absolute;
+      @include app-width("right", 10);
+      @include app-width("top", 5);
+    }
+    &s::before {
+      visibility: hidden;
+    }
+    &s::before,
+    &-item {
+      align-items: center;
+      background: var(--color-grey-light) none center center / cover no-repeat;
+      @include app-width("border-radius", 4);
+      content: "";
+      display: flex;
+      @include app-width("height", 30);
+      justify-content: center;
+      margin-bottom: 0;
+      @include app-width("margin-left", 5);
+      margin-right: 0;
+      @include app-width("margin-top", 5);
+      @include app-width("width", 30);
+    }
+  }
+}
+
+.add-event-conflict-member-item {
+  background-color: var(--color-grey-lighter);
+  @include app-width("border-radius", 10);
+  @include app-width("padding", 10);
+
+  & + & {
+    @include app-width("margin-top", 20);
+  }
+
+  .user-list-item {
+    @include app-width("height", 39);
+
+    .image {
+      background-color: var(--color-grey-light);
+    }
+  }
+
+  .conflict-details {
+    display: flex;
+    @include font-500;
+    @include fs-15;
+    justify-content: space-between;
+    @include app-width("margin-top", 10);
+
+    &.descr {
+      color: var(--color-grey-light-text);
+      @include font-500i;
+    }
+  }
+
+  .form-group {
+    @include app-width("margin-top", 10);
+  }
+}

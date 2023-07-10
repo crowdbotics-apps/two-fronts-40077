@@ -1,0 +1,68 @@
+@import "../../../assets/styles/mixins.scss";
+
+.wrapper-dashboard {
+  .main-top-bar {
+    background-color: var(--color-grey-main-top-bar);
+    @include app-width("height", 96);
+    @include app-width("padding-bottom", 18);
+    @include app-width("padding-left", 30);
+    @include app-width("padding-right", 30);
+    @include app-width("padding-top", 18);
+
+    > input {
+      @include font-400;
+      @include fs-18;
+      @include app-width("height", 60);
+    }
+
+    .nav-item {
+      background-color: transparent;
+      border: 0;
+      display: flex;
+      @include app-width("height", 40);
+      @include app-width("margin-left", 42);
+      padding: 0;
+      @include app-width("width", 40);
+
+      .icon-wrap {
+        svg {
+          @include app-width("height", 40);
+          @include app-width("width", 40);
+        }
+      }
+    }
+    > .nav-item {
+      &:first-of-type {
+        @include app-width("margin-left", 53);
+      }
+    }
+  }
+
+  .main-content {
+    &-area {
+    }
+    &-sidebar {
+      border-left-color: var(--color-border);
+      border-left-style: solid;
+      @include app-width("border-left-width", 1);
+      @include app-width("width", 418);
+
+      > * {
+        @include app-width("padding-left", 30);
+        @include app-width("padding-right", 30);
+      }
+      > :first-child {
+        @include app-width("padding-top", 30);
+      }
+      > :last-child {
+        @include app-width("padding-bottom", 30);
+      }
+
+      .form-control--search {
+        @include font-400;
+        @include fs-18;
+        @include app-width("height", 50);
+      }
+    }
+  }
+}

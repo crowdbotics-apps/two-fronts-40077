@@ -1,0 +1,22 @@
+@import "../assets/styles/mixins.scss";
+
+.actions-bar {
+  display: flex;
+  justify-content: space-between;
+  @include app-width("margin-bottom", 16);
+
+  &-left {
+    button.btn {
+      @include app-width("min-width", 160);
+      @include app-width("padding-left", 50);
+      @include app-width("padding-right", 50);
+    }
+  }
+
+  &-right {
+    button.btn {
+      color: var(--color-black);
+      @include app-width("height", 37);
+    }
+  }
+}
